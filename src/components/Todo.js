@@ -10,8 +10,8 @@ class Todo extends Component {
                     cursor: this.props.completed ? 'default' : 'pointer',  
                     color: this.props.completed ? '#f00' : '#000'  
                 }}  
- 
             >
+            {this.props.text}
             </li>
         )
     }

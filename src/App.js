@@ -6,8 +6,7 @@ import Filter from './components/Filter';
 
 class App extends Component {
   render() {
-    const {todos,visibilityFilter,dispatchAdd,dispatchToggle,dispatchSetVisiblity} = this.props;
-
+    const {todos,visibilityFilter,dispatchAdd,dispatchToggle,dispatchSetVisibility} = this.props;
     return (
     <div className="App">
       <AddTodo 
@@ -15,7 +14,7 @@ class App extends Component {
       />
       <Filter 
         filter = {visibilityFilter}
-        onFilterChange = {dispatchSetVisiblity}
+        onFilterChange = {dispatchSetVisibility}
       />
       <TodoList 
         todos = {todos}

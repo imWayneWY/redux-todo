@@ -7,13 +7,13 @@ class TodoList extends Component{
             return(
                 <ul>
                 {
-                    this.props.todos.map((todo,index) => {
+                    this.props.todos.map((todo,index) =>( 
                         <Todo key={index}
                         {...todo}
                         onClick={()=>{
                             this.props.onToggleClick(index)
                         }}/>
-                    })
+                    ))
                 }
                 </ul>
                 );
